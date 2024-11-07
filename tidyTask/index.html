@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TidyTask - Enhanced To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>TidyTask</h1>
+
+        <div class="controls">
+            <input type="text" id="taskInput" placeholder="Enter a task...">
+            <select id="categoryInput">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Other">Other</option>
+            </select>
+            <select id="priorityInput">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <input type="date" id="deadlineInput">
+            <button id="addTaskButton">Add Task</button>
+        </div>
+
+        <div class="filter">
+            <input type="text" id="searchInput" placeholder="Search tasks...">
+            <button id="toggleDarkMode">Toggle Dark Mode</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
