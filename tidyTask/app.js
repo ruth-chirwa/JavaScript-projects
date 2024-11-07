@@ -127,3 +127,19 @@ function renderTaskList(tasks) {
         taskList.appendChild(li);
     });
 }
+
+// Function to get tasks from localStorage
+function getTasksFromStorage() {
+    const tasks = localStorage.getItem('tasks');
+    return tasks ? JSON.parse(tasks) : [];
+}
+
+// Function to save tasks to localStorage
+function saveTasksToStorage(tasks) {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}

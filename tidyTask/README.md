@@ -17,7 +17,7 @@
 
 ## Demo
 
-Try out the live demo (not available yet) here: 
+Try out the live demo (not available yet) here: https://strong-starship-5082b8.netlify.app/
 
 ---
 
