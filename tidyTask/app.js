@@ -8,7 +8,7 @@ const taskList = document.getElementById('taskList');
 const searchInput = document.getElementById('searchInput');
 const toggleDarkModeButton = document.getElementById('toggleDarkMode');
 
-// Load tasks from localStorage when the page loads
+// Load tasks from localStorage
 document.addEventListener('DOMContentLoaded', () => {
     loadTasks();
     toggleDarkModeState();
@@ -87,7 +87,7 @@ function loadTasks() {
                 <span class="priority">${task.priority}</span>
                 <span class="deadline">${task.deadline ? task.deadline : 'No deadline'}</span>
             </div>
-            <button onclick="deleteTask(${index})">Delete</button>
+            <button class="delete" onclick="deleteTask(${index})">❌</button>
         `;
         taskList.appendChild(li);
     });
@@ -122,7 +122,7 @@ function renderTaskList(tasks) {
                 <span class="priority">${task.priority}</span>
                 <span class="deadline">${task.deadline ? task.deadline : 'No deadline'}</span>
             </div>
-            <button onclick="deleteTask(${index})">Delete</button>
+            <button class="delete" onclick="deleteTask(${index})">❌</button>
         `;
         taskList.appendChild(li);
     });

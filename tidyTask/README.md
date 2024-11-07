@@ -17,7 +17,7 @@
 
 ## Demo
 
-Try out the live demo (if available) here: [TidyTask Demo](#)
+Try out the live demo (not available yet) here: 
 
 ---
 
