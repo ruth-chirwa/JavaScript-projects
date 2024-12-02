@@ -18,3 +18,11 @@ console.log(girlsNames);
 
 girlsNames.sort();
 console.log(girlsNames);
+
+
+// exercise 5
+const pageHeading = 
+    document.getElementsByTagName(h1)[0]
+        console.log(pageHeading.textContent);
+        pageHeading.innerText= 
+        'Learning the DOM with JavaScript'
