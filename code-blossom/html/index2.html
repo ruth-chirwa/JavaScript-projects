@@ -9,56 +9,167 @@
     <title>Learning HTML</title>
 </head>
 <body>
+    <header>
     <h1>My Goal is to learn HTML in 4 hours and build something</h1>
-    <h2>This will happen today! i will surely build something</h2>
-    <p>Let's do this!</p>
-<hr>
+    
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-<hr>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </nav>
+    </header>
+    <hr>
+<main>
+<h2>This will happen today! i will surely build something</h2>
+    <p>Let's do this!</p>
     <!--Creating Lists: Ordered, Unordered, Description-->
-            <section id="home">
+            <article id="home">
             <h3>This is an Ordered List</h3>
+            <section>
+            <figure>
+            <img src="img/HOW TO LIVE A LIFE OF TRAVEL_ TIPS TO GETTING STARTED.jpg" 
+            alt="A picture taken in the plane"
+            width="120"
+            height="200"
+            loading="lazy">
+            <figcaption>This is a vacation picture</figcaption>
+            </figure>
+        </section>
+        <aside>
+            <details>
+                <summary>Guess How many hours <mark>I code</mark> for</summary>
+                <p>I start Coding at <time datetime="09:00am">9am</time> to 11 am and that equals 2 hours</p>
+            </details>
+        </aside>
             <ol>
             <li>Hello</li>
             <li>Hello</li>
             <li>Hello</li>
             </ol>
-        </section>
+            <br>
+            <table>
+                <thead>
+                    <th>Daily Updates</th>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Morning</th>
+                    <td>
+                        <time datetime="08:00">8am</time>- <time datetime="11:00">11am</time>
+                    </td>
+                    <td>
+                        Write code
+                    </td>                    
+                </tr>
+                <tr>
+                    <th>Lunch</th>
+                    <td>
+                        <time datetime="08:00">8am</time>- <time datetime="11:00">11am</time>
+                    </td>
+                    <td>
+                        Write code
+                    </td>                    
+                </tr>
+                <tr>
+                    <th>Afternoon</th>
+                    <td>
+                        <time datetime="08:00">8am</time>- <time datetime="11:00">11am</time>
+                    </td>
+                    <td>
+                        Write code
+                    </td>                    
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>My Table</td>
+                </tr>
+            </tfoot>
+            </table>
+        </article>
 
 <hr>
 
-            <section id="about">
+            <article id="about">
         <h3>This is an Unordered List</h3>
+        <img src="img/How to travel Bora Bora on a Budget.jpg" 
+        alt="A picture taken in the plane"
+        width="120"
+        height="200"
+        loading="lazy">
         <ul>
         <li>Hello</li>
         <li>Hello</li>
         <li>Hello</li>
         </ul>
-    </section>
+    </article>
 
 <hr>
 
-        <section id="contact">
+        <article id="contact">
             <h3>This is a Description List</h3>
+            <img src="img/Holiday ideas in Greece_ readers’ travel tips.jpg" 
+            alt="A picture taken in the plane"
+            width="120"
+            height="200"
+            loading="lazy">
             <dl>
             <dt>My Dream</dt>
             <dd>Innovation</dd>
             <dd>Empowerment</dd>
             <dd>Code</dd>
             </dl>
-        </section>
+        </article>
+<hr>
 
+        <article id="form">
+        <h2>My Form</h2>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <p>
+            <label for="firstName">First Name: </label>
+            <input type="text" name="firstName" id="FirstName"
+            placeholder="First Name" autocomplete="on" autofocus required>
+        </p>
+
+        <p>
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" id="lastName"
+            placeholder="Last Name" autocomplete="on" required>
+        </p>
+
+        
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email"
+            placeholder="Email" autocomplete="on" required>
+        </p>
+       <button type="submit">Submit</button>
+       <button type="reset">Reset</button>
+        </fieldset>
+         </form>
+        </article>
+
+    </main>
     <hr>
-    &lt;&lt; &copy; <a href="about.html">Ruth</a> &gt;&gt;
+
+   <footer>
+   
+    &lt;&lt; &copy; <a href="about.html" target="_blank">Ruth</a> &gt;&gt;
         <p>
             <a href="#">Back to Top</a>
         </p>
+   </footer>
+   
 </body>
 </html>
