@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    color: #2d3748;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #4a90e2, #007BFF);
+    color: #fff;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    margin: 0 1.5rem;
+}
+
+header nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffe082;
+}
+
+/* Section Styles */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #1a202c;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #4a90e2, #007BFF);
+    margin: 2.5rem 0;
+}
+
+p {
+    margin: 1rem 0;
+    text-align: justify;
+    color: #4a5568;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Image Styles */
+img {
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+}
+
+button {
+    background: linear-gradient(135deg, #4a90e2, #007BFF);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #007BFF, #4a90e2);
+    transform: scale(1.02);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #2d3748;
+    color: #e2e8f0;
+    margin-top: 2rem;
+}
+
+footer address {
+    font-style: normal;
+    color: #a0aec0;
+}
+
+footer a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}

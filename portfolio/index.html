@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ruth Chirwa">
+    <meta name="description" content="UI/UX Designer Portfolio">
+    <title>Ruth Chirwa - UI/UX Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen">Ruth Chirwa - Software Developer</div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Ruth Chirwa</div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <nav id="nav">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        Hi, I'm Ruth Chirwa, a passionate <strong>Full Stack Developer</strong> and <strong>UI/UX Designer</strong>. 
+                        I specialize in building elegant, user-friendly web applications that merge functionality with stunning design. 
+                    </p>
+                    <p>
+                        My journey started with a love for problem-solving and creativity. Over the years, I’ve honed my skills in 
+                        <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and modern frameworks like <strong>React</strong> 
+                        and <strong>Node.js</strong>. I thrive on turning complex ideas into intuitive digital experiences.
+                    </p>
+                    <p>
+                        Beyond coding, I enjoy exploring new design trends, learning emerging technologies, and collaborating with 
+                        dynamic teams to bring innovative ideas to life. 
+                    </p>
+                    <p>
+                        Curious about my work? <a href="#projects">Check out my projects below</a> or <a href="#contact">get in touch</a>!
+                    </p>
+                </div>
+                <div class="about-image-container">
+                    <img 
+                        src="img/IMG-7859 (1).jpeg" 
+                        alt="Ruth Chirwa Profile Picture" 
+                        class="profile-image"
+                    />
+                </div>
+            </div>
+        </section>
+        
+        
+
+       
+       <!-- Projects Section -->
+       <section id="projects" class="section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-carousel">
+            <button class="scroll-arrow left" id="scroll-left">&#8592;</button>
+            <div class="carousel-track" id="project-grid">
+                <div class="project-card">
+                    <div class="card-front">
+                        <img src="img/Bestselling Open Cart Templates _ EntheosWeb.jpeg" alt="E-commerce Redesign" class="project-image">
+                    </div>
+                    <div class="card-back">
+                        <h3 class="project-title">E-commerce Redesign</h3>
+                        <p class="project-description">A complete redesign of an e-commerce platform to enhance usability and visual appeal.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-front">
+                        <img src="img/design high converting shopify landing page, dropshipping store.jpeg" alt="Portfolio Showcase" class="project-image">
+                    </div>
+                    <div class="card-back">
+                        <h3 class="project-title">Portfolio Showcase</h3>
+                        <p class="project-description">A modern, responsive portfolio design for creative professionals.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-front">
+                        <img src="img/Furni - Furniture eCommerce Website Template by Untree_co.jpeg" alt="Portfolio Showcase" class="project-image">
+                    </div>
+                    <div class="card-back">
+                        <h3 class="project-title">Portfolio Showcase</h3>
+                        <p class="project-description">A modern, responsive portfolio design for creative professionals.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-front">
+                        <img src="img/Mixtas - Minimalist Fashion WooCommerce Theme.jpeg" alt="Portfolio Showcase" class="project-image">
+                    </div>
+                    <div class="card-back">
+                        <h3 class="project-title">Portfolio Showcase</h3>
+                        <p class="project-description">A modern, responsive portfolio design for creative professionals.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Add more project cards here -->
+            </div>
+            <button class="scroll-arrow right" id="scroll-right">&#8594;</button>
+        </div>
+    </section>
+    
+
+<section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-container">
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Full Stack Developer</h3>
+                <span>XYZ Tech | Jan 2023 - Present</span>
+            </div>
+            <div class="experience-details">
+                <p>Worked on developing scalable web applications and delivering optimal user experiences.</p>
+                <ul>
+                    <li>Designed and implemented REST APIs for seamless integration.</li>
+                    <li>Improved website performance by optimizing JavaScript and server-side code.</li>
+                    <li>Collaborated with UI/UX designers for enhanced design consistency.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>UI/UX Intern</h3>
+                <span>Creative Solutions | Jun 2022 - Dec 2022</span>
+            </div>
+            <div class="experience-details">
+                <p>Assisted in creating user-centered designs and prototypes for various clients.</p>
+                <ul>
+                    <li>Conducted user research and usability testing for iterative improvements.</li>
+                    <li>Produced wireframes and mockups using Figma and Adobe XD.</li>
+                    <li>Collaborated with developers to ensure design feasibility.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <h3>UI/UX Design</h3>
+            <p>Crafting intuitive and visually appealing user experiences using tools like Figma and Adobe XD.</p>
+        </div>
+        <div class="skill">
+            <h3>Full-Stack Development</h3>
+            <p>Building scalable web applications using HTML, CSS, JavaScript, React, Node.js, and MongoDB.</p>
+        </div>
+        <div class="skill">
+            <h3>Responsive Design</h3>
+            <p>Creating mobile-friendly, responsive layouts that work seamlessly across all devices.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="section">
+    <h2 class="section-title">What People Say</h2>
+    <div class="testimonials-container">
+        <div class="testimonial">
+            <p>"Ruth's designs are both creative and functional. She truly understands user needs!"</p>
+            <h4>- Client A</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Working with Ruth was a pleasure. Her attention to detail is unmatched."</p>
+            <h4>- Client B</h4>
+        </div>
+        <div class="testimonial">
+            <p>"She delivered an amazing product on time. Highly recommend her skills."</p>
+            <h4>- Client C</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="section">
+    <h2 class="section-title">Latest Blog Posts</h2>
+    <div class="blog-container">
+        <div class="blog-post">
+            <h3>Designing for Accessibility</h3>
+            <p>Discover how to create inclusive designs that work for everyone.</p>
+            <a href="#" class="blog-link">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>Top 5 UI/UX Trends in 2025</h3>
+            <p>Stay ahead of the curve with these emerging trends in design and technology.</p>
+            <a href="#" class="blog-link">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>How to Build a Responsive Portfolio</h3>
+            <p>A step-by-step guide to creating a stunning portfolio that adapts to any screen size.</p>
+            <a href="#" class="blog-link">Read More</a>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <p>If you would like to discuss a project or just want to get in touch, feel free to reach out!</p>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-message" class="form-message"></p>
+        </section>
+        <!-- Back to Top Button -->
+<button id="back-to-top" title="Go to top">&#8593;</button>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Ruth Chirwa. All rights reserved.</p>
+        <address>Lilongwe, Malawi</address>
+    </footer>
+</body>
+</html>
