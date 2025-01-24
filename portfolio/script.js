@@ -82,10 +82,13 @@ scrollRightButton.addEventListener("click", function() {
 });
 
 // Hamburger menu toggle
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("nav").getElementsByClassName("nav-links")[0];
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
 
-hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+    hamburger.addEventListener('click', function() {
+        // Toggle the display of the navigation menu
+        nav.classList.toggle('active');
+    });
 });
 

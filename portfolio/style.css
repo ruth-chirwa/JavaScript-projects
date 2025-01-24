@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f7f9fb; /* Soft light blue background */
+    background-color: #f7f9fb; 
     color: #333;
     line-height: 1.6;
     display: flex;
@@ -21,7 +21,7 @@ a {
 }
 
 h1, h2, h3 {
-    color: #1A2A6C; /* Elegant dark blue */
+    color: #1A2A6C; 
 }
 
 /* Splash Screen */
@@ -59,7 +59,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #1A2A6C; /* Rich blue */
+    background-color: #1A2A6C; 
     color: white;
     position: sticky;
     top: 0;
@@ -96,7 +96,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f39c12; /* Warm yellow accent */
+    color: #f39c12; 
     transform: scale(1.1);
 }
 
@@ -193,16 +193,16 @@ main {
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column; /* Stack text and image vertically */
-        text-align: center; /* Center-align text */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .about-text {
-        max-width: 100%; /* Take full width */
+        max-width: 100%; 
     }
 
     .profile-image {
-        max-width: 80%; /* Reduce image size for smaller screens */
+        max-width: 80%; 
     }
 }
 
@@ -281,8 +281,8 @@ footer p {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    display: none; /* Hidden by default */
-    background-color: #1A2A6C; /* Dark blue */
+    display: none; 
+    background-color: #1A2A6C; 
     color: white;
     border: none;
     border-radius: 50%;
@@ -294,7 +294,7 @@ footer p {
 }
 
 #back-to-top:hover {
-    background-color: #2980b9; /* Lighter blue */
+    background-color: #2980b9; 
     transform: scale(1.1);
 }
 
@@ -436,8 +436,8 @@ footer p {
 
 /* Contact Section */
 #contact {
-    text-align: center; /* Center text horizontally */
-    padding: 60px 20px; /* Add padding to give space around */
+    text-align: center; 
+    padding: 60px 20px; 
 }
 
 .contact-form {
@@ -485,17 +485,17 @@ footer p {
 
 .form-message {
     text-align: center;
-    color: #2ecc71; /* Green color for success messages */
+    color: #2ecc71; 
     font-size: 1.1rem;
     margin-top: 20px;
 }
 
-/* Add a margin to give space around the Contact section text */
+
 #contact h2 {
     margin-bottom: 30px;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -545,7 +545,7 @@ footer p {
 /* Skills Section */
 #skills {
     padding: 50px 20px;
-    background-color: #eef2f3; /* Light grey background */
+    background-color: #eef2f3; 
 }
 
 .skills-container {
@@ -627,7 +627,7 @@ footer p {
 /* Blog Section */
 #blog {
     padding: 50px 20px;
-    background-color: #f7f9fb; /* Light blue background */
+    background-color: #f7f9fb; 
 }
 
 .blog-container {
@@ -747,5 +747,194 @@ footer p {
     .experience-item {
         flex-direction: column;
         padding: 15px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    header .hamburger {
+        display: block;
+    }
+
+    header nav {
+        display: none; 
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    /* About Section Layout */
+    #about {
+        text-align: center;
+    }
+
+    #about .about-container {
+        display: block; /* Stack the text and image */
+    }
+
+    #about .profile-image {
+        width: 80%; /* Make the image smaller for mobile */
+        margin-top: 20px;
+    }
+
+    /* Projects Section */
+    .projects-carousel {
+        display: block;
+    }
+
+    .carousel-track {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .project-card {
+        min-width: 200px;
+        margin-right: 10px;
+    }
+
+    .project-card img {
+        width: 100%;
+    }
+
+    /* Contact Form */
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header nav {
+        display: block;
+    }
+
+    header .hamburger {
+        display: none;
+    }
+
+    #about .about-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about .profile-image {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    /* Projects Section */
+    .projects-carousel {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .carousel-track {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .project-card {
+        min-width: 250px;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skill {
+        width: 30%;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header nav ul li {
+        margin-right: 40px;
+    }
+
+    #about .about-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about .about-text {
+        width: 50%;
+    }
+
+    #about .profile-image {
+        width: 40%;
+    }
+
+    /* Projects Section */
+    .projects-carousel {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .carousel-track {
+        display: flex;
+        gap: 20px;
+    }
+
+    .project-card {
+        min-width: 300px;
+        max-width: 350px;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skill {
+        width: 30%;
+    }
+
+    /* Testimonials Section */
+    .testimonials-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .testimonial {
+        width: 30%;
     }
 }
